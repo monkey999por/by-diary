@@ -4,7 +4,6 @@ import Image from 'next/image';
 // requeire??
 import 'dayjs/locale/ja';
 
-import SampleComp from '@/components/SampleComp';
 import TestComp from '@/components/testcomp/ss/gg/TestComp';
 
 import { pagesPath } from '@/lib/$path';
@@ -39,11 +38,14 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div>create now dddggate to use dayjs: {dayjs().format('YYYY/MM/DD')}</div>
+      <div>
+        create now dddggate to use dayjs: {dayjs().format('YYYY/MM/DD')}
+      </div>
       <div>
         get static path to use a dd pathpida :{' '}
         {pagesPath.sample2.$url().pathname}
       </div>
+      <div>print .env value: {process.env.SAMPLE_VALUE_AT_DOTENV}</div>
       {/* <SampleComp name={'hogehoge'} /> */}
       <TestComp name={'From Test Comp'} />
       <div className=" grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">

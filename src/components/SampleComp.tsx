@@ -3,5 +3,11 @@ type Props = {
 };
 
 export default function SampleComp(params: Props) {
-  return <>Sampleaaa comp: props.name: {params.name}</>;
+  return (
+    <>
+      <button className=" border border-gray-300 bg-current">
+        {params.name}
+      </button>
+    </>
+  );
 }
