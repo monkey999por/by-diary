@@ -3,16 +3,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Packages
 
 - Main Framework
+
   - Next.js@14.0.1
 
 - Sub Framework
   - typescript@5
   - pathpida@0.22.0
+  - tailwindcss@3.3.0
 
 ## Create develop Enveloiment
 
-- require: install `node@20.9.0` before.
-  
+- require: install `node@20.9.0`.
+
 1. install package
 
 ```sh
@@ -27,8 +29,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 npm run dev
 ```
 
-Open [http://localhost:6006](http://localhost:6006) with your browser to see the result.
-3. vscode setting
+Open [http://localhost:6006](http://localhost:6006) with your browser to see the result. 3. vscode setting
 
 - plugins (require)
   - [pretter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
@@ -51,20 +52,20 @@ npm run format
 1. check coding rule.
 
 to use [ESlint](https://eslint.org/)
-this checks source file in `src` and `__test__` directory. The rule is defined by `.eslintrc.json`.
+this checks source file in `src` directory. The rule is defined by `.eslintrc.json`.
 
 ```bash
-yarn lint
+npm run lint:fix
 ```
 
 - `.eslintrc.json`: define setting(ex. rule, plugin) in eslint.
 
-2.Type check
+  2.Type check
 
 to use [tsc](https://www.typescriptlang.org/docs/handbook/compiler-options.html#handbook-content) with typescript compiler. the rule is defined by `tsconfig.json`.
 
 ```bash
-yarn tsc
+npm run tsc
 ```
 
 - `tsconfig.json`: setting in Typescript.
@@ -73,8 +74,8 @@ yarn tsc
 
 Run test with [jest](https://jestjs.io/ja/docs/api)
 
-```
-yarn test
+```bash
+npm run test
 ```
 
 ## Checking code before `git commit`
@@ -82,6 +83,8 @@ yarn test
 Your source file that is staged by command `git add` is checked static
 to use [lint-staged](https://github.com/lint-staged/lint-staged) and [husky](https://github.com/typicode/husky).
 the target is defined in `.husky/pre-commit`.
+
+- `.lintstagedrc.js`: setting lint-staged for Next.js
 
 ## (Memo) initial readme.md to use `create-next-app`
 
