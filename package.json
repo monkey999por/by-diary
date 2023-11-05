@@ -10,7 +10,7 @@
     "start": "next start",
     "tsc": "tsc",
     "lint:next": "next lint",
-    "lint": "eslint src",
+    "lint": "eslint src --fix",
     "format": "prettier --write '**/*.{js,ts,jsx,tsx,json,md}'",
     "prepare": "husky install",
     "test": "jest ./src"

@@ -10,5 +10,9 @@ const buildEslintCommand = filenames =>
 
 module.exports = {
   '*.{js,jsx,ts,tsx}': [buildEslintCommand],
-  '**/src/*.{ts,tsx}': ['npm run lint', 'npm run format', 'npm run test'],
+  '**/src/**/*.{ts,tsx}': [
+    'eslint src --fix',
+    "prettier --write '**/*.{js,ts,jsx,tsx,json,md}'",
+    'jest ./src',
+  ],
 };

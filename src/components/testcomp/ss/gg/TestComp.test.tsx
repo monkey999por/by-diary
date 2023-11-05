@@ -4,12 +4,12 @@ import SampleComp from '@/components/SampleComp';
 import '@testing-library/jest-dom';
 
 describe('Home', () => {
-  it('rendgger  s a heading', () => {
-    const buttonName = 'sample c om  p b utto  n';
+  it('rendgge r  s a heading', () => {
+    const buttonName = 'sample comp buttone';
     render(<SampleComp name={buttonName} />);
 
     const heading = screen.getByRole('button', {
-      name: /sample comp button/i,
+      name: /sample comp buttone/i,
     });
 
     expect(heading).toBeInTheDocument();
