@@ -21,18 +21,24 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
 2. run localhost server
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:6006](http://localhost:6006) with your browser to see the result. 3. vscode setting
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- plugins (require)
-  - [pretter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+3. install plugins for development (require)
+
+- [pretter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): format code on save.
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss): complete classname as Tailwind css
+
+4. init pre-commit (不要かも？)
+
+```
+npx husky install
+```
 
 ## Some scripts
 
@@ -55,7 +61,7 @@ to use [ESlint](https://eslint.org/)
 this checks source file in `src` directory. The rule is defined by `.eslintrc.json`.
 
 ```bash
-npm run lint:fix
+npm run lint
 ```
 
 - `.eslintrc.json`: define setting(ex. rule, plugin) in eslint.
