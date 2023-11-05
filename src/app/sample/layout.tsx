@@ -23,7 +23,7 @@ export default function RootLayout({
               fontSize: "20px",
             }}
           >
-            This is sample page
+            This is sample page /src/app/sample
           </div>
         </>
         {children}
