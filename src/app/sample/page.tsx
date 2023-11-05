@@ -5,7 +5,7 @@ import Image from 'next/image';
 import 'dayjs/locale/ja';
 
 import SampleComp from '@/components/SampleComp';
-import TestComp from "@/components/testcomp/ss/gg/TestComp";
+import TestComp from '@/components/testcomp/ss/gg/TestComp';
 
 import { pagesPath } from '@/lib/$path';
 
@@ -43,7 +43,7 @@ export default function Home() {
       <div>
         get static path to use pathpida : {pagesPath.sample2.$url().pathname}
       </div>
-      <SampleComp name={'hogehoge'} />
+      {/* <SampleComp name={'hogehoge'} /> */}
       <TestComp name={'From Test Comp'} />
       <div className=" grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
