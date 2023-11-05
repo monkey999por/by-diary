@@ -8,6 +8,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - Sub Framework
   - typescript@5
   - pathpida@0.22.0
+  - tailwindcss@3.3.0
 
 ## Create develop Enveloiment
 
