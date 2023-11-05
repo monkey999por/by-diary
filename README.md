@@ -42,6 +42,17 @@ npx husky install
 
 ## Some scripts
 
+### Run storybook
+
+this command runs storybook on localhost.
+
+```
+npm run storybook
+```
+
+- Tips:
+  - aa
+
 ### Code format
 
 Format code with [Prettier](https://prettier.io/) when you run "save action" with vscode or run this command. The rule is defined by `.prettierrc` and `.prettierignore`.
