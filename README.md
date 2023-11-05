@@ -12,7 +12,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Create develop Enveloiment
 
-- require: install `node@20.9.0` before.
+- require: install `node@20.9.0`.
   
 1. install package
 
