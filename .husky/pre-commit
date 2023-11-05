@@ -2,4 +2,6 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # I have error to define `tsc` in package.json at section of `lint-staged`. so run `tsc here`.
-npm run tsc && npx lint-staged
+# defined at lint-staged in package.json is not working. so run `npm run format` and `npm run lint:fix` here.
+# npm run tsc && npm run format && npm run lint:fix
+npm run tsc && npx  lint-staged

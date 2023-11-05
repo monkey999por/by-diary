@@ -5,7 +5,7 @@ import Image from 'next/image';
 import 'dayjs/locale/ja';
 
 import SampleComp from '@/components/SampleComp';
-import TestComp from "@/components/testcomp/ss/gg/TestComp";
+import TestComp from '@/components/testcomp/ss/gg/TestComp';
 
 import { pagesPath } from '@/lib/$path';
 
@@ -20,7 +20,7 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className="font-mono font-bold">app/page.tsx</code>
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+        <div className="fixe d bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -39,11 +39,12 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div>create now date to use dayjs: {dayjs().format('YYYY/MM/DD')}</div>
+      <div>create now dddggate to use dayjs: {dayjs().format('YYYY/MM/DD')}</div>
       <div>
-        get static path to use pathpida : {pagesPath.sample2.$url().pathname}
+        get static path to use a dd pathpida :{' '}
+        {pagesPath.sample2.$url().pathname}
       </div>
-      <SampleComp name={'hogehoge'} />
+      {/* <SampleComp name={'hogehoge'} /> */}
       <TestComp name={'From Test Comp'} />
       <div className=" grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
@@ -53,7 +54,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
+            Doc sdfs{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
