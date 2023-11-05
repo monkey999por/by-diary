@@ -50,8 +50,9 @@ this command runs storybook on localhost.
 npm run storybook
 ```
 
-- Tips:
-  - aa
+- memo:
+  - [How to add storybook within Next.js](https://storybook.js.org/recipes/next)
+  - [How to add storybook with tailwindcss](https://storybook.js.org/recipes/tailwindcss)
 
 ### Code format
 
