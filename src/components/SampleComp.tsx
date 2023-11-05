@@ -3,5 +3,5 @@ type Props = {
 };
 
 export default function SampleComp(params: Props) {
-  return <>Sample comp: props.name: {params.name}</>;
+  return <>Sampleaaa comp: props.name: {params.name}</>;
 }
