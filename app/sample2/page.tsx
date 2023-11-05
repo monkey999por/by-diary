@@ -1,4 +1,3 @@
-import { pagesPath } from "@/lib/$path";
 import dayjs from "dayjs";
 // requeire??
 import "dayjs/locale/ja";
@@ -34,10 +33,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div>create now date to use dayjs: {dayjs().format("YYYY/MM/DD")}</div>
-      <div>
-        get static path to use pathpida : {pagesPath.sample2.$url().pathname}
-      </div>
+      <div>use dayjs create now date: {dayjs().format("YYYY/mm/DD")}</div>
       <div className=" grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
