@@ -13,12 +13,13 @@
     "lint": "eslint src",
     "format": "prettier --write '**/*.{js,ts,jsx,tsx,json,md}'",
     "prepare": "husky install",
-    "test": "jest"
+    "test": "jest ./src"
   },
   "lint-staged": {
     "**/*.@(ts|tsx)": [
       "npm run lint",
-      "npm run format"
+      "npm run format",
+      "npm run jest ./src"
     ]
   },
   "dependencies": {
