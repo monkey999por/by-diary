@@ -45,6 +45,7 @@ export default function Home() {
         get static path to use a dd pathpida :{' '}
         {pagesPath.sample2.$url().pathname}
       </div>
+      <div>print .env value: {process.env.SAMPLE_VALUE_AT_DOTENV}</div>
       {/* <SampleComp name={'hogehoge'} /> */}
       <TestComp name={'From Test Comp'} />
       <div className=" grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
