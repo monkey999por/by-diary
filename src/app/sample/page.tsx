@@ -4,7 +4,6 @@ import Image from 'next/image';
 // requeire??
 import 'dayjs/locale/ja';
 
-import SampleComp from '@/components/SampleComp';
 import TestComp from '@/components/testcomp/ss/gg/TestComp';
 
 import { pagesPath } from '@/lib/$path';
@@ -41,7 +40,8 @@ export default function Home() {
       </div>
       <div>create now dddate to use dayjs: {dayjs().format('YYYY/MM/DD')}</div>
       <div>
-        get static path to use a  dd pathpida : {pagesPath.sample2.$url().pathname}
+        get static path to use a dd pathpida :{' '}
+        {pagesPath.sample2.$url().pathname}
       </div>
       {/* <SampleComp name={'hogehoge'} /> */}
       <TestComp name={'From Test Comp'} />
@@ -53,7 +53,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Doc  sdfs{' '}
+            Doc sdfs{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
