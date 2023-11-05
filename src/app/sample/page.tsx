@@ -1,10 +1,11 @@
 import dayjs from 'dayjs';
 import Image from 'next/image';
+
 // requeire??
 import 'dayjs/locale/ja';
-import Sample2 from '../sample2/page';
-import { pagesPath } from '@/lib/$path';
 import SampleComp from '@/components/SampleComp';
+
+import { pagesPath } from '@/lib/$path';
 
 // requeire??
 dayjs.locale('ja');
