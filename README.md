@@ -77,7 +77,7 @@ Run test with [jest](https://jestjs.io/ja/docs/api)
 yarn test
 ```
 
-## Checking code before `git commit`
+## Checking code before `git commit`ddd
 
 Your source file that is staged by command `git add` is checked static
 to use [lint-staged](https://github.com/lint-staged/lint-staged) and [husky](https://github.com/typicode/husky).
