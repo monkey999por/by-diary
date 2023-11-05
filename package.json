@@ -9,14 +9,15 @@
     "build": "pathpida --ignorePath .gitignore && next build",
     "start": "next start",
     "tsc": "tsc",
-    "lint": "next lint",
-    "lint:fix": "eslint --cache --fix src && prettier --write src",
+    "lint:next": "next lint",
+    "lint:all": "eslint --cache --fix src && prettier --write src",
+    "lint": "eslint src",
     "format": "prettier --write '**/*.{js,ts,jsx,tsx,json,md}'",
     "prepare": "husky install"
   },
   "lint-staged": {
     "**/*.@(ts|tsx)": [
-      "npm run lint:fix",
+      "npm run lint",
       "npm run format"
     ]
   },
