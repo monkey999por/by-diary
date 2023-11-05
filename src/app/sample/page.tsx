@@ -7,7 +7,7 @@ import 'dayjs/locale/ja';
 import SampleComp from '@/components/SampleComp';
 import TestComp from '@/components/testcomp/ss/gg/TestComp';
 
-import { pagesPath } from '@/lib/$path';
+import { pagesPath } from "@/lib/$path";
 
 // requeire??
 dayjs.locale('ja');
