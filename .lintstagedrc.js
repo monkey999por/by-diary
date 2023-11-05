@@ -10,13 +10,13 @@ const buildNextlintCommand = filenames =>
 
 const buildEslintCommand = filenames =>
   `eslint src --fix ${filenames
-    .map(f => path.relative(process.cwd(), f))
-    .join('')}`;
+    .map(f => path.relative(process.cwd(), f).replaceAll('\\', '/'))
+    .join(' ')}`;
 
 const buildPrettierCommand = filenames =>
   `prettier --write ${filenames
-    .map(f => path.relative(process.cwd().replace('\\', '/'), f))
-    .join('')}`;
+    .map(f => path.relative(process.cwd(), f).replaceAll('\\', '/'))
+    .join(' ')}`;
 
 module.exports = {
   '*.{js,jsx,ts,tsx}': [buildNextlintCommand],
