@@ -19,7 +19,7 @@
     "**/*.@(ts|tsx)": [
       "npm run lint",
       "npm run format",
-      "npm run jest ./src"
+      "jest ./src"
     ]
   },
   "dependencies": {
