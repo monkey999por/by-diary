@@ -52,10 +52,10 @@ npm run format
 1. check coding rule.
 
 to use [ESlint](https://eslint.org/)
-this checks source file in `src` and `__test__` directory. The rule is defined by `.eslintrc.json`.
+this checks source file in `src` directory. The rule is defined by `.eslintrc.json`.
 
 ```bash
-yarn lint
+npm run lint:fix
 ```
 
 - `.eslintrc.json`: define setting(ex. rule, plugin) in eslint.
@@ -65,7 +65,7 @@ yarn lint
 to use [tsc](https://www.typescriptlang.org/docs/handbook/compiler-options.html#handbook-content) with typescript compiler. the rule is defined by `tsconfig.json`.
 
 ```bash
-yarn tsc
+npm run tsc
 ```
 
 - `tsconfig.json`: setting in Typescript.
@@ -74,8 +74,8 @@ yarn tsc
 
 Run test with [jest](https://jestjs.io/ja/docs/api)
 
-```
-yarn test
+```bash
+npm run test
 ```
 
 ## Checking code before `git commit`
@@ -83,6 +83,8 @@ yarn test
 Your source file that is staged by command `git add` is checked static
 to use [lint-staged](https://github.com/lint-staged/lint-staged) and [husky](https://github.com/typicode/husky).
 the target is defined in `.husky/pre-commit`.
+
+- `.lintstagedrc.js`: setting lint-staged for Next.js
 
 ## (Memo) initial readme.md to use `create-next-app`
 
