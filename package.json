@@ -9,6 +9,7 @@
     "build": "pathpida --ignorePath .gitignore && next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "eslint --cache --fix src && prettier --write src",
     "format": "prettier --write '**/*.{js,ts,jsx,tsx,json,md}'"
   },
   "dependencies": {
@@ -21,6 +22,8 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.1",

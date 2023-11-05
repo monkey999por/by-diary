@@ -1,3 +1,26 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals",
+    "prettier"
+  ],
+  "eslint": "recommended",
+  "plugin": "@typescript-eslint/recommended",
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "semi": ["error", "always"],
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "Literal[value=null]",
+        "message": "Do not use 'null', use 'undefined' instead."
+      }
+    ]
+  }
 }
