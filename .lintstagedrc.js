@@ -10,4 +10,5 @@ const buildEslintCommand = filenames =>
 
 module.exports = {
   '*.{js,jsx,ts,tsx}': [buildEslintCommand],
+  '**/*.@(ts|tsx)': ['npm run lint', 'npm run format', 'npm run test'],
 };

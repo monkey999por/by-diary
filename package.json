@@ -15,13 +15,6 @@
     "prepare": "husky install",
     "test": "jest ./src"
   },
-  "lint-staged": {
-    "**/*.@(ts|tsx)": [
-      "npm run lint",
-      "npm run format",
-      "npm run test"
-    ]
-  },
   "dependencies": {
     "dayjs": "^1.11.10",
     "next": "14.0.1",
