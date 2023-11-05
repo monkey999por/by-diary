@@ -36,7 +36,7 @@ yarn-error.log*
 next-env.d.ts
 
 # pathpida
-lib/$path.ts
+**/lib/$path.ts
 
 # eslint
 .eslintcache
