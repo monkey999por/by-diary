@@ -41,7 +41,7 @@ export default function Home() {
       </div>
       <div>create now date to use dayjs: {dayjs().format('YYYY/MM/DD')}</div>
       <div>
-        get static path to use pathpida : {pagesPath.sample2.$url().pathname}
+        get static path to use a  pathpida : {pagesPath.sample2.$url().pathname}
       </div>
       {/* <SampleComp name={'hogehoge'} /> */}
       <TestComp name={'From Test Comp'} />
