@@ -1,8 +1,10 @@
-import { pagesPath } from '@/lib/$path';
 import dayjs from 'dayjs';
+import Image from 'next/image';
 // requeire??
 import 'dayjs/locale/ja';
-import Image from 'next/image';
+import Sample2 from '../sample2/page';
+import { pagesPath } from '@/lib/$path';
+import SampleComp from '@/components/SampleComp';
 
 // requeire??
 dayjs.locale('ja');
@@ -38,6 +40,7 @@ export default function Home() {
       <div>
         get static path to use pathpida : {pagesPath.sample2.$url().pathname}
       </div>
+      <SampleComp name={'hogehoge'} />
       <div className=" grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"

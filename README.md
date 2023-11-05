@@ -3,6 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Packages
 
 - Main Framework
+
   - Next.js@14.0.1
 
 - Sub Framework
@@ -13,7 +14,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Create develop Enveloiment
 
 - require: install `node@20.9.0`.
-  
+
 1. install package
 
 ```sh
@@ -28,8 +29,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 npm run dev
 ```
 
-Open [http://localhost:6006](http://localhost:6006) with your browser to see the result.
-3. vscode setting
+Open [http://localhost:6006](http://localhost:6006) with your browser to see the result. 3. vscode setting
 
 - plugins (require)
   - [pretter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
@@ -60,7 +60,7 @@ yarn lint
 
 - `.eslintrc.json`: define setting(ex. rule, plugin) in eslint.
 
-2.Type check
+  2.Type check
 
 to use [tsc](https://www.typescriptlang.org/docs/handbook/compiler-options.html#handbook-content) with typescript compiler. the rule is defined by `tsconfig.json`.
 
