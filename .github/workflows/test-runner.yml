@@ -22,4 +22,4 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run Jest tests
-        run: npm run jest -- ./src
+        run: npm run test
