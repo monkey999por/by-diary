@@ -9,7 +9,7 @@ describe('Home', () => {
     render(<SampleComp name={buttonName} />);
 
     const heading = screen.getByRole('button', {
-      name: /Asample compaa buttone/i,
+      name: /Asample comccpaa buttone/i,
     });
 
     expect(heading).toBeInTheDocument();
