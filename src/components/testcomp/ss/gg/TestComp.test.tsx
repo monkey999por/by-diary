@@ -5,7 +5,7 @@ import '@testing-library/jest-dom';
 
 describe('Home', () => {
   it('rendgge r  s a heading', () => {
-    const buttonName = 'Asample compaa buttone';
+    const buttonName = 'Asample comccpaa buttone';
     render(<SampleComp name={buttonName} />);
 
     const heading = screen.getByRole('button', {

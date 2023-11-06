@@ -51,6 +51,7 @@ const config = {
     '^.+\\.module\\.(css|sass|scss)$',
   ],
 
+  // eslint-disable-next-line no-dupe-keys
   testEnvironment: 'jest-environment-jsdom',
 };
 

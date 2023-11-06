@@ -23,6 +23,7 @@ module.exports = {
   '**/src/**/*.{ts,tsx}': [
     buildEslintCommand,
     buildPrettierCommand,
-    'jest ./src',
+    // test is running on github actions when open "pull request". so that's fired.
+    // 'jest ./src',
   ],
 };
