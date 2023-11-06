@@ -5,70 +5,47 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  setup_dependencies:
-    runs-on: ubuntu-latest
-    outputs:
-      cache-key: ${{ steps.cache-dependencies.outputs.cache-key }}
-    steps:
-      - uses: actions/checkout@v3
-      - name: Cache node modules
-        uses: actions/cache@v3
-        id: cache-dependencies
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - name: Install dependencies
-        run: npm ci
-
   lint:
-    needs: setup_dependencies
     runs-on: ubuntu-latest
+    name: Lint
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20.9.0'
-      - name: Get cached node modules
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ needs.setup_dependencies.outputs.cache-key }}
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
       - name: Run ESLint
         run: npm run lint
 
   type-check:
-    needs: setup_dependencies
     runs-on: ubuntu-latest
+    name: Type Check
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20.9.0'
-      - name: Get cached node modules
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ needs.setup_dependencies.outputs.cache-key }}
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
       - name: Run Typescript Compiler
         run: npm run tsc
 
   test:
-    needs: setup_dependencies
     runs-on: ubuntu-latest
+    name: Test
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20.9.0'
-      - name: Get cached node modules
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ needs.setup_dependencies.outputs.cache-key }}
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
       - name: Run Jest tests
         run: npm run test
