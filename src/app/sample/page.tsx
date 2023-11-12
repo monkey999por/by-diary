@@ -46,6 +46,10 @@ export default function Home() {
         {pagesPath.sample2.$url().pathname}
       </div>
       <div>print .env value: {process.env.SAMPLE_VALUE_AT_DOTENV}</div>
+      <div>
+        print process.env.defined_env_val_in_next_config_js:{' '}
+        {process.env.defined_env_val_in_next_config_js}
+      </div>
       {/* <SampleComp name={'hogehoge'} /> */}
       <TestComp name={'From Test Comp'} />
       <div className=" grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
