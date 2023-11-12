@@ -3,7 +3,13 @@ const nextConfig = {
     // it will only load the modules which is actually used. spesifies some package in array.
     // optimizePackageImports: ['package-name'],
     // https://nextjs.org/docs/app/api-reference/next-config-js/partial-prerendering
-    // ppr: true,
+    // see: https://nextjs.org/docs/app/api-reference/next-config-js/urlImports
+    // urlImports: ['https://example.com/assets/', 'https://cdn.skypack.dev'],
+  },
+
+  i18n: {
+    locales: ['en', 'fr', 'de'],
+    defaultLocale: 'en',
   },
   devIndicators: {
     buildActivityPosition: 'bottom-right',
